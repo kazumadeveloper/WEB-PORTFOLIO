@@ -315,8 +315,13 @@ input[type=text], input[type=email], textarea{
         font-size: 1rem;
     }
 
+    .button{
+        padding: 5px;
+    }
+
     .navbar-list{
         margin-right: 0;
+        gap: 0px;
     }
 
     .left-side-home p{
@@ -338,7 +343,7 @@ input[type=text], input[type=email], textarea{
     }
 
     .about-container{
-        height: 145vh;
+        height: 115vh;
     }
 
     .skill-container{
@@ -359,6 +364,16 @@ input[type=text], input[type=email], textarea{
     .spotify-item{
         flex-direction: column;
         gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
     }
   }
 
