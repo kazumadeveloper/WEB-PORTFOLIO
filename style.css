@@ -315,6 +315,10 @@ input[type=text], input[type=email], textarea{
         font-size: 1rem;
     }
 
+    .navbar-list{
+        margin-right: 0;
+    }
+
     .left-side-home p{
         width: 50%;
     }
@@ -333,8 +337,12 @@ input[type=text], input[type=email], textarea{
         border-radius: 500px;
     }
 
+    .about-container{
+        height: 145vh;
+    }
+
     .skill-container{
-        height: 200vh;
+        height: 215vh;
     }
 
     .skill-item{
