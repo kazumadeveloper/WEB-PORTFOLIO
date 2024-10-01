@@ -330,10 +330,20 @@ button:hover {
     font-size: 0.8rem;
 }
 
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
     .navbar-list ul{
         display: none;
+    }
+
+    .menu-icon{
+        display: flex;
+        font-size: 24px;
+        margin-right: 35px;
     }
     
     .button {
@@ -395,6 +405,12 @@ button:hover {
 
     .logo {
         margin-left: 0px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin-top: 100px;
+        /* Could be more or less, depending on screen size */
     }
 
 }
