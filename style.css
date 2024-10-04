@@ -121,6 +121,28 @@ body {
     font-size: 1.5rem;
 }
 
+/* gallery */
+
+.gallery-container{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.foto{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.foto img{
+    width: 300px;
+    border-radius: 10px;
+}
+
 /* skill */
 
 .skill-container {
@@ -394,6 +416,20 @@ button:hover {
 
     .about-container p {
         text-align: justify;
+    }
+
+    .gallery-container{
+        height: 140vh;
+    }
+
+    .foto{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foto img{
+        width: 250px;
     }
 
     .skill-container {
