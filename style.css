@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
+    transition: background-color 1s ease-in-out;
+
 }
 
 body {
@@ -79,6 +81,7 @@ body {
     color: white;
     border-radius: 5px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -93,6 +96,18 @@ body {
     justify-content: space-evenly;
     font-size: 1.8rem;
     align-items: center;
+}
+
+.buttonHome{
+    padding: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .left-side-home p {
@@ -127,18 +142,24 @@ body {
 /* about */
 
 .about-container {
-    height: 70vh;
+    height: 80vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 }
 
-.about-container p {
-    width: 70%;
-    text-align: center;
+.right-about{
+    width: 60%;
+    text-align: left;
     font-size: 1.5rem;
+}
+
+
+.right-about{
+    display: flex;
+    flex-direction: column;
 }
 
 /* gallery */
@@ -154,13 +175,21 @@ body {
 
 .foto{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    overflow: scroll;
 }
 
 .foto img{
     width: 300px;
-    border-radius: 10px;
+    height: 300px;
+    filter: brightness(50%);
+}
+
+.foto img:hover{
+    filter: brightness(100%);
+    transition: ease-in-out 1s;
 }
 
 /* skill */
@@ -213,10 +242,67 @@ body {
     background-color: #ddd;
 }
 
+/* project */
+.myproject-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.project a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.project-container img{
+    width: 350px;    
+}
+
+.project-container{
+    height: 400px;
+    width: 400px;
+    padding-top: 30px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.text-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-project h2{
+    font-size: 1.3rem;
+}
+
+.text-project p{
+    width: 80%;
+}
+
 /* spotify playlist */
 
 .spotify-container {
-    height: 115vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +346,7 @@ textarea {
 }
 
 /* Set a style for all buttons */
-button {
+.buttonModal {
     background-color: var(--primary-color);
     color: white;
     padding: 14px 20px;
@@ -436,11 +522,19 @@ button:hover {
     }
 
     .about-container {
-        height: 100vh;
+        height: 150vh;
+        flex-direction: column;
     }
 
     .about-container p {
-        text-align: justify;
+        text-align: center;
+    }
+
+    .right-about{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .gallery-container{
@@ -466,6 +560,26 @@ button:hover {
         justify-content: center;
         align-items: center;
         gap: 30px;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+
+    .project-container{
+        width: 300px;
+    }
+
+    .project-container img{
+        width: 250px;
+    }
+
+    .project-container h2{
+        font-size: 1rem;
+    }
+
+    .myproject-container{
+        height: 200vh;
     }
 
     .spotify-container {

@@ -20,6 +20,7 @@ darkMode.onclick = function() {
     document.body.classList.toggle('dark-mode');
 
     if(document.body.classList.contains("dark-mode")){
+
         darkMode.src = "img/light-mode.png";
     }else{
         darkMode.src = "img/dark_mode_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png";
