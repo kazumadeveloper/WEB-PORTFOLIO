@@ -476,7 +476,7 @@ button:hover {
         top: 70px;
         border-radius: 10px;
         left: 0px;
-        background-color: #fefefe;
+        background-color: var(--secondary-color);
         padding: 10px;
         width: 100%;
     }
@@ -564,6 +564,7 @@ button:hover {
 
     .project{
         flex-direction: column;
+        gap: 20px;
     }
 
     .project-container{
