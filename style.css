@@ -7,6 +7,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--base-color);
     padding-top: 10vh;
@@ -331,26 +335,6 @@ body {
     height: 380px;
 }
 
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
 /* footer container */
 .footer-container {
     background-color: var(--primary-color);
@@ -431,7 +415,7 @@ body {
     }
 
     .about-container p {
-        text-align: center;
+        text-align: left;
     }
 
     .right-about{
