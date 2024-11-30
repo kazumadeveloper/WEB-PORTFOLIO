@@ -152,6 +152,9 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+        animation: animasi3 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50% ;
 }
 
 .right-about{
@@ -166,35 +169,6 @@ body {
     flex-direction: column;
 }
 
-/* gallery */
-
-.gallery-container{
-    display: flex;
-    height: 80vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.foto{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    width: 90%;
-    overflow: scroll;
-}
-
-.foto img{
-    width: 300px;
-    height: 300px;
-    filter: brightness(50%);
-}
-
-.foto img:hover{
-    filter: brightness(100%);
-    transition: ease-in-out 1s;
-}
 
 /* skill */
 
@@ -205,6 +179,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    animation: animasi2 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
 }
 
 .skill-item {
@@ -253,6 +230,9 @@ body {
     align-items: center;
     height: 100vh;
     gap: 30px;
+    animation: animasi linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40% ;
 }
 
 .project{
@@ -489,5 +469,35 @@ body {
         margin-top: 100px;
         /* Could be more or less, depending on screen size */
     }
-
 }
+
+@keyframes animasi {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    } to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animasi2 {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    } to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animasi3 {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    } to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
